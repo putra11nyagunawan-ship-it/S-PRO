@@ -225,6 +225,30 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable"></script>
 
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAvmvrSEd-_bSiTA6HehxTqB82zEyMYmVA",
+        authDomain: "safety-pro-89c5c.firebaseapp.com",
+        projectId: "safety-pro-89c5c",
+        storageBucket: "safety-pro-89c5c.firebasestorage.app",
+        messagingSenderId: "603920935905",
+        appId: "1:603920935905:web:4881a27d1c66cc576dc0a0",
+        measurementId: "G-3E9HZS5EW4"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    </script>
+
     <!-- Script utama -->
     <script src="script.js"></script>
 

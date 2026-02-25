@@ -607,6 +607,41 @@ ${r.inspektor}
 
 `;
 
+// ============================
+// LOAD DATA DARI FIREBASE
+// ============================
+
+function loadRiwayatFirebase(){
+
+db.collection("riwayat")
+.get()
+.then(snapshot=>{
+
+riwayatData = [];
+
+snapshot.forEach(doc=>{
+
+riwayatData.push(doc.data());
+
+});
+
+renderRiwayatTable();
+
+});
+
+}
+
+
+// ============================
+// SIMPAN DATA KE FIREBASE
+// ============================
+
+function saveRiwayatFirebase(data){
+
+db.collection("riwayat").add(data);
+
+}
+
 }).join("");
 
 }
