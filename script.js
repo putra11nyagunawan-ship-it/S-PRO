@@ -45,7 +45,7 @@ function showSection(id, el) {
 
     renderRiwayatTable();
 
-    renderDownloadButtons();
+   // renderDownloadButtons();
 
     loadFilterDeptRiwayat();
 
